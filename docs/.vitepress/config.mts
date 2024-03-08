@@ -66,7 +66,7 @@ function sidebarBlog(){
       text: 'title',
       collapsed: false,
       items:[
-        { text: 'ssfaf', link: '/sdfaf'}
+        { text: '使用vitepress构建知识库', link: '/vitepress'}
     ]
     }
   ]
