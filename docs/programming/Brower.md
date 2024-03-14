@@ -1,7 +1,21 @@
 
+主要用来介绍浏览器的相关内容。
+### Chrome Driver的下载地址
+
+Chrom的版本在115及其以上到下面这个地址进行下载
+https://googlechromelabs.github.io/chrome-for-testing/
+
+## Chrome的 Headless模式
+
+在进行浏览器的测试时，发现在115以上的chrome专门退出了叫做 chrome-headless-shell的一个可执行文件，类似于chrome driver后续想要深入的了解使用这个chrome-headless-shell能不能够有效的提高测试的速度。
+
+
+
 # extension
 
-## viuium
+## vimium
+
+Github地址： 
 
 ### cheat sheet
 
