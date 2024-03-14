@@ -37,7 +37,8 @@ function sidebarProgramming(){
         collapsed: false,
         items: [
           { text: 'Helix', link: '/helix' },
-          { text: 'Brower', link: '/brower' }
+          { text: 'Brower', link: '/brower' },
+          { text: 'Tmux', link: '/tmux' }
         ]
       },
       {
