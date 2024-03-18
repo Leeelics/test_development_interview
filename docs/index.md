@@ -4,22 +4,22 @@ layout: home
 
 hero:
   name: "Learn What"
-  text: "A site show CS interview knowloage"
-  tagline: My great project tagline
+  text: "学习很重要，知道学习什么更重要"
+  tagline: 思而不学则罔，学而不思则殆
   actions:
     - theme: brand
-      text: Programming
-      link: /programming/docker
+      text: Learn
+      link: /learn/index
     - theme: alt
-      text: Blog
-      link: /blog/index
+      text: What
+      link: /what/index
 
 features:
   - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    details: 2024年程序员面试学习的指南和宝典
   - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    details: 实时同步更新的学习过程，和我一起在踩坑中前进吧
   - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    details: 如果能一直保持更新相信会有更多内容
 ---
 

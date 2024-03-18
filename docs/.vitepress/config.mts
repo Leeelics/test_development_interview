@@ -8,20 +8,20 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { 
-        text: 'Programming',
-        link: '/programming/sql',
-        activeMatch: '/programming/' 
+        text: 'Learn',
+        link: '/learn/sql',
+        activeMatch: '/learn/' 
       },
       { 
-        text: 'Blog',
-        link: '/blog/index',
-        activeMatch: '/blog/' 
+        text: 'What',
+        link: '/what/index',
+        activeMatch: '/what/' 
       }
     ],
 
     sidebar:{
-      '/programming/': { base: '/programming/', items: sidebarProgramming() },
-      '/blog/': { base: '/programming/', items: sidebarBlog() }
+      '/Learn/': { base: '/programming/', items: sidebarProgramming() },
+      '/Knowagle/': { base: '/blog/', items: sidebarBlog() }
     },
 
     socialLinks: [
@@ -48,6 +48,7 @@ function sidebarProgramming(){
           { text: 'Python', link: '/python' },
           { text: 'Typescript', link: '/typescript' },
           { text: 'SQL', link: '/sql' },
+          { text: 'Git', link: '/git' },
           { text: 'Docker', link:'/docker' }
         ]
       },
@@ -64,10 +65,12 @@ function sidebarProgramming(){
 function sidebarBlog(){
   return[
     {
-      text: 'title',
+      text: 'Life Log',
       collapsed: false,
       items:[
-        { text: '使用vitepress构建知识库', link: '/vitepress'}
+        { text: '构建vitepress', link: '/vitepress'},
+        { text: '沮丧坟墓', link: '/grave25depression' },
+        { text: '重学AI', link: '/return2ai' },
     ]
     }
   ]
