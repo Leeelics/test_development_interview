@@ -1,27 +1,25 @@
 import { defineConfig } from 'vitepress'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Learn What",
   description: "A site show CS interview knowloage",
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     nav: [
       { 
-        text: 'Learn',
-        link: '/learn/sql',
+        text: '知识',
+        link: '/programming/index',
         activeMatch: '/learn/' 
       },
       { 
-        text: 'What',
-        link: '/what/index',
-        activeMatch: '/what/' 
+        text: '博客',
+        link: '/blog/index',
+        activeMatch: '/blog/' 
       }
     ],
 
     sidebar:{
-      '/Learn/': { base: '/programming/', items: sidebarProgramming() },
-      '/Knowagle/': { base: '/blog/', items: sidebarBlog() }
+      '/programming/': { base: '/programming/', items: sidebarProgramming() },
+      '/blog/': { base: '/blog/', items: sidebarBlog() }
     },
 
     socialLinks: [
@@ -71,6 +69,7 @@ function sidebarBlog(){
         { text: '构建vitepress', link: '/vitepress'},
         { text: '沮丧坟墓', link: '/grave25depression' },
         { text: '重学AI', link: '/return2ai' },
+        { text: '学习英语', link: '/learnEnglish' },
     ]
     }
   ]

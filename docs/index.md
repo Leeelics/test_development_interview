@@ -8,11 +8,11 @@ hero:
   tagline: 思而不学则罔，学而不思则殆
   actions:
     - theme: brand
-      text: Learn
-      link: /learn/index
+      text: 知识
+      link: /programming/index
     - theme: alt
-      text: What
-      link: /what/index
+      text: 经验
+      link: /blog/index
 
 features:
   - title: Feature A
@@ -20,6 +20,6 @@ features:
   - title: Feature B
     details: 实时同步更新的学习过程，和我一起在踩坑中前进吧
   - title: Feature C
-    details: 如果能一直保持更新相信会有更多内容
+    details: 只是想发挥出自己最大的潜力，不留遗憾
 ---
 

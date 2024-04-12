@@ -37,3 +37,8 @@ W	Move tab to next window
 <<	Move tab to the left
 >>	Move tab to the right
 ``` 
+
+
+# Debug
+
+setTimeout(() => { debugger}, 2000) 可以有效的停止页面，捕捉悬浮和短暂下拉的是元素。
