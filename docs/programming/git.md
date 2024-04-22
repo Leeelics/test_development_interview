@@ -6,7 +6,7 @@
 ssh-keygen -t ed25519 -C "your_email@example.com"
 
 
-## 情景问答
+## 应用场景
 
 #### 1. **远程分支重新进行了 rebase 操作，本地分支如何操作能够跟远程分支保持一致**
 

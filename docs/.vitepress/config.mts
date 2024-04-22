@@ -6,12 +6,12 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { 
-        text: '知识',
+        text: 'Computer Science',
         link: '/programming/index',
         activeMatch: '/learn/' 
       },
       { 
-        text: '博客',
+        text: 'Experience',
         link: '/blog/index',
         activeMatch: '/blog/' 
       }
@@ -40,18 +40,21 @@ function sidebarProgramming(){
         ]
       },
       {
-        text: 'Language',
+        text: 'Interview',
         collapsed: false,
         items: [
-          { text: 'Python', link: '/python' },
-          { text: 'Typescript', link: '/typescript' },
-          { text: 'SQL', link: '/sql' },
+          { text: 'Algrithems', link: '/algrithems' },
+          { text: 'CI/CD', link: '/cicd' },
+          { text: 'Cpp', link: '/cpp' },
+          { text: 'Docker', link:'/docker' },
           { text: 'Git', link: '/git' },
-          { text: 'Docker', link:'/docker' }
+          { text: 'Python', link: '/python' },
+          { text: 'SQL', link: '/sql' },
+          { text: 'Typescript', link: '/typescript' },
         ]
       },
       {
-        text: 'Auto Test',
+        text: 'Project',
         collapsed: false,
         items: [
           { text: 'Pytest', link: '/pytest' },

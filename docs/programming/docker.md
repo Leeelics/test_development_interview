@@ -233,13 +233,14 @@ autotest:
 
 docker compose配置文件与docker 启动命名的对应写法速查表
 
-| 指令         | Docker                                      | Docker Compose                                          |
-| ---------- | ------------------------------------------- | ------------------------------------------------------- |
-| 为容器命名      | container_name:                             | --name [name]                                           |
-| 容器停止时，自动删除 | --rm                                        | deploy:<br>    - replicas: 0                            |
-| 端口映射       | -p 5000:5000 -p 4500:4500                   | ports:<br>    - "5000:5000"<br>    - "4500:4500"        |
-| 数据volume挂载 | -v $(pwd):/app -v $(pwd)/output:/app/output | volumes:<br>    - ./:/app<br>    - ./output:/app/output |
-|            |                                             |                                                         |
+| 指令         | Docker                                      | Docker Compose                                                                                        |
+| ---------- | ------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| 为容器命名      | container_name:                             | --name [name]                                                                                         |
+| 容器停止时，自动删除 | --rm                                        | deploy:<br>    - replicas: 0                                                                          |
+| 端口映射       | -p 5000:5000 -p 4500:4500                   | ports:<br>    - "5000:5000"<br>    - "4500:4500"                                                      |
+| 数据volume挂载 | -v $(pwd):/app -v $(pwd)/output:/app/output | volumes:<br>    - ./:/app<br>    - ./output:/app/output                                               |
+| 交互模式       | docker run -i                               | version: "3" <br>services: <br>     my_service:   <br>     image: container_name<br>        tty: true |
+| 允许         | docker run -t                               | stdin_open: true                                                                                      |
 
 
 #### 1.如果想要使用宿主机的用户权限来启动docker应该怎么做？
@@ -250,3 +251,7 @@ docker compose配置文件与docker 启动命名的对应写法速查表
 #### 参考项
 
 1. [Chap-13: Scaling Services with Docker Compose: A Practical Guide](https://medium.com/@maheshwar.ramkrushna/chap-12-scaling-services-with-docker-compose-a-practical-guide-f79b16513360)
+
+## 帮助文档
+
+# 
