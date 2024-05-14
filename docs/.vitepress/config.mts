@@ -34,9 +34,10 @@ function sidebarProgramming(){
         text: 'Tool',
         collapsed: false,
         items: [
-          { text: 'Helix', link: '/helix' },
           { text: 'Brower', link: '/brower' },
-          { text: 'Tmux', link: '/tmux' }
+          { text: 'Helix', link: '/helix' },
+          { text: 'Tmux', link: '/tmux' },
+          { text: 'Vim', link: '/vim' },
         ]
       },
       {

@@ -63,9 +63,10 @@ Rebase
 
 git rebase 会删除掉
 
+
+# Config
+
 config 配置有system级别 global（用户级别） 和local（当前仓库）三个 设置先从system-》global-》local  底层配置会覆盖顶层配置 分别使用--system/global/local 可以定位到配置文件
-
-
 
 ```bash
 
@@ -81,6 +82,18 @@ git config --global  --list
 git config --local  --list
 ```
 
+Git修改用户名和密码的命令包括两个方面：修改全局配置和修改某个仓库的配置。
+
+1. 修改全局配置：
+   git config –global user.name “your_new_username”
+   git config –global user.email “your_new_email@example.com”
+   运行上述命令，将会修改Git的全局配置，更改用户名和邮箱。
+
+2. 修改某个仓库配置:
+   进入到你想要修改的仓库目录，运行以下命令：
+   git config user.name “your_new_username”
+   git config user.email “your_new_email@example.com”
+   这样就会覆盖该仓库的配置文件，设置新的用户名和邮箱。
 
 ## git使用https或http方式设置记住用户名和密码的方法
 
@@ -111,6 +124,9 @@ git config --global credential.helper store
 3、系统级别 system【优先级最低】
 
 [git config配置 - fireporsche - 博客园](https://www.cnblogs.com/fireporsche/p/9359130.html "git config配置 - fireporsche - 博客园")
+
+
+# Remote
 
 ```bash
 git remote -v # 查看当前的remote
