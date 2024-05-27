@@ -4,10 +4,26 @@
 
 ```sql
 
-Select [colunm_name].. From Table_Name  WHERE  condiction  Group By id by order
+Select
+	[colunm_name].. 
+From 
+	Table1
+LEFT JOIN
+	Table2
+ON
+	Table1.id = Table2.id
+	
+WHERE  
+	condiction
+Group By 
+	id 
+ORDER BYorder
 
 ```
 
+1. 如何处理数值为null的情况，当某个列的数值为null，应该如何保留这些数据？
+
+2. 
 
 
 

@@ -3,7 +3,11 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Learn What",
   description: "A site show CS interview knowloage",
+  head:[
+    ['link', {rel: 'icon', href: '/learnwhat1.svg'}]
+  ],
   themeConfig: {
+    logo: '/learnwhat1.svg',
     nav: [
       { 
         text: 'Computer Science',
